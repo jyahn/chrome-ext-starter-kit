@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "05_popup",
+  "version": "0.1",
+  "description": "communicate from the popup to content. change any <p> elements' 
+  innerHTML to be whatever text is sent typed in the popup's input field",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_icon": "dog.png",
+    // use the following line if you want to make your own popup.html
+    // "default_popup": "popup.html",
+    //use the following line if you want to put an index.html from another project
+    // "default_popup": "memory_game/index.html",
+    "default_popup": "sketch/index.html",
+    "default_title": "Sketch"
+  }
+}

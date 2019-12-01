@@ -1,0 +1,9 @@
+{
+  "manifest_version": 2,
+  "name": "06_tab_override",
+  "version": "0.1",
+  "description": "display a custom html page with a background image of a dog for new tabs",
+  "chrome_url_overrides": {
+    "newtab": "sketch/index.html"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "04_p5 sketch",
+  "version": "0.1",
+  "description": "draw on a canvas overlay on any webpage using p5 library",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["p5.js", "sketch.js"]
+    }
+  ]
+}

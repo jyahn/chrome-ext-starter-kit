@@ -1,0 +1,1 @@
+### This repo is a stater-kit for building basic chrome extension applications.

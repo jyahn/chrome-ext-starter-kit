@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "07_wordnik",
+  "version": "0.1",
+  "description": "retrieve the definition of a highlighted word by making an ajax call to wordnik api and display the definition in a popup",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "dog.png",
+    "default_popup": "sketch/index.html",
+    "default_title": "Lookup a definition"
+  }
+}

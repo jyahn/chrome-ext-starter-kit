@@ -1,0 +1,24 @@
+{
+  "name": "02_background_script",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "demo extension communicates from the background script to the content script",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+        // "http://shiffman.net/*",
+        // "https://shiffman.net/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "dog.png"
+    // "default_popup": "memorygame/index.html",
+    // "default_title": "A popup will come here."
+  }
+}

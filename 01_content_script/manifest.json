@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "01_content script",
+  "version": "0.1",
+  "description": "changes the background color of all the <p> elements on a page to pink",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+        // "http://shiffman.net/*",
+        // "https://shiffman.net/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
