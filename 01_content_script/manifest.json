@@ -7,8 +7,8 @@
     {
       "matches": [
         "<all_urls>"
-        // "http://shiffman.net/*",
-        // "https://shiffman.net/*"
+        // "http://yahoo.com/*",
+        // "https://yahoo.com/*"
       ],
       "js": ["content.js"]
     }
